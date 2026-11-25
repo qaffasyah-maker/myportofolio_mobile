@@ -123,9 +123,7 @@ class _ExperienceFormPageState extends State<ExperienceFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text('Add Experience Form'),
-        ),
+        title: const Center(child: Text('Add Experience Form')),
         backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
       ),
@@ -195,7 +193,9 @@ class _ExperienceFormPageState extends State<ExperienceFormPage> {
                 value: _endDate,
                 icon: Icons.event,
                 validator: (d) {
-                  if (d != null && _startDate != null && d.isBefore(_startDate!)) {
+                  if (d != null &&
+                      _startDate != null &&
+                      d.isBefore(_startDate!)) {
                     return "Tanggal selesai tidak boleh sebelum tanggal mulai!";
                   }
                   return null;

@@ -108,10 +108,10 @@ class _ProjectFormPageState extends State<ProjectFormPage> {
   }
 
   InputDecoration _decoration(String label) => InputDecoration(
-        hintText: label,
-        labelText: label,
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
-      );
+    hintText: label,
+    labelText: label,
+    border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
+  );
 
   @override
   Widget build(BuildContext context) {
